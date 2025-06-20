@@ -1,6 +1,7 @@
 pipeline {
     agent any
 
+    stages {
         stage('Install Backend') {
             steps {
                 dir('server') {
