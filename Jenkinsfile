@@ -1,13 +1,6 @@
 pipeline {
     agent any
 
-    stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/Hayk7JS7/Mini-social-media-'
-            }
-        }
-
         stage('Install Backend') {
             steps {
                 dir('server') {
